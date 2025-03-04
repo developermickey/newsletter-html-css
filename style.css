@@ -124,7 +124,7 @@ main {
 }
 .grident-heading {
     background: linear-gradient(90deg, #000080 0%, #FF8827 100%);
-    padding: 1rem 4rem 1rem 1rem;
+    padding: 1rem 3rem 1rem 1rem;
     border-radius: 8px;
     max-width: 350px;
 }
