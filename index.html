@@ -6,6 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pragati - The Sahamati Newsletter</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 400px;
+            background-image: url(https://sahamati.org.in/wp-content/uploads/2025/03/image.png);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: cover;
+            border-radius: 0px 0px 48px 48px;
+            position: relative;
+            text-align: center;
+        }
+
+        .nav {
+            width: 100%;
+            height: 400px;
+            padding: 2rem;
+            border-radius: 0px 0px 48px 48px;
+        }
+
+        .nav-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: #fff;
+            border-radius: 0px 0px 48px 48px;
+
+        }
+
+        .nav-date p {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .navbar h3 {
+            width: 100%;
+            font-size: 2.75rem;
+            font-weight: 800;
+            font-style: italic;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+
+        /* content section */
+
+        .content {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .content-item {
+            padding: 1rem 2rem;
+        }
+
+        .content .content-item h2 {
+            padding-top: 1rem;
+            color: #000080;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: "Caladea", serif;
+        }
+
+        .mark {
+            color: #FF8827;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: "Caladea", serif;
+        }
+
+        .content .content-item p {
+            color: #272727;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: justify;
+            padding-top: 1rem;
+            line-height: 28px;
+            letter-spacing: 0;
+        }
+
+
+        /* key stats section */
+
+        .row {
+            width: 100%;
+            background: linear-gradient(105.86deg, #F6F6FF 0%, rgba(246, 246, 255, 0) 100%);
+            border: 1px solid #DDDDFF;
+            border-radius: 24px;
+            padding: 2rem;
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .row .col-6 {
+            width: 50%;
+        }
+
+        .pad {
+            padding-left: 2rem;
+        }
+
+        .border {
+            display: block;
+            width: 2%;
+            height: 100%;
+            border-right: 1px solid #DDDDFF;
+            padding-right: 1rem;
+        }
+
+        .grident-heading {
+            background: linear-gradient(90deg, #000080 0%, #FF8827 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            max-width: 350px;
+        }
+
+        .row .col-6 ul {
+            list-style: none;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .row .col-6 ul li {
+            background: url('https://sahamati.org.in/wp-content/uploads/2025/03/list-icon.png') no-repeat left center;
+            padding-left: 24px;
+            background-size: 16px;
+            padding-left: 24px;
+            font-size: 14px;
+        }
+
+        .grident-heading h4 {
+            font-family: "Caladea", serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 27.6px;
+            letter-spacing: 0%;
+            color: #fff;
+
+        }
+
+        .impact-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .content-item .left,
+        .content-item .right {
+            width: 50%;
+            height: 100%;
+        }
+
+        .content-item .left img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-item .right .btn {
+            border-radius: 36px;
+            padding: 13.33px 24px;
+            background: #FF8827;
+            border: none;
+            color: #fff;
+            margin-top: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .grident-background {
+            background: linear-gradient(180deg, #000080 0%, #FF8827 155.85%);
+            border-radius: 48px;
+        }
+
+        .myths {
+            position: absolute;
+            top: 120px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,9 +231,11 @@
         <header class="navbar">
             <nav class="nav">
                 <div class="nav-item">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/logo.png" alt="logo">
                     <div class="nav-date">
-                        <p>January’25 Newsletter <img src="./img/calender.png" alt="Newsletter"></p>
+                        <p>January’25 Newsletter <img
+                                src="https://sahamati.org.in/wp-content/uploads/2025/03/calender.png" alt="Newsletter">
+                        </p>
                     </div>
                 </div>
             </nav>
@@ -85,7 +305,7 @@
 
             <div class="content-item impact-section">
                 <div class="left">
-                    <img src="./img/impact-story.png" alt="">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/impact-story.png" alt="">
                 </div>
                 <div class="right">
                     <h2><span class="mark">The AA</span> Impact Story:</h2>
@@ -113,15 +333,151 @@
                         Framework for Responsible and Ethical Enablement of AI (FREE-AI). This aims to balance
                         innovation with accountability in financial services.
                     </p>
-                    <button class="btn">Read More <img src="./img/arrow-btn.png" alt="arrow-btn"></button>
+                    <button class="btn">Read More <img
+                            src="https://sahamati.org.in/wp-content/uploads/2025/03/arrow-btn.png"
+                            alt="arrow-btn"></button>
                 </div>
                 <div class="left">
-                    <img src="./img/Finance.png" alt="Finance">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/Finance.png" alt="Finance">
                 </div>
             </div>
 
-            <div class=""></div>
+            <div class="content-item grident-background">
+                <h2 style="color: white;"><span class="mark">Sahamati </span> Monthly Recap:</h2>
+                <div style="padding-top: 1rem;">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/Advocacy-Updates.png" alt="">
+
+                    <p style="color: #fff;">The first Pragati Session of 2025, held in collaboration with Finarkein
+                        Analytics on January 30,
+                        explored the evolving Account Aggregator landscape. The session on "AA 360°: Status, Use Cases,
+                        and the Road Ahead," offered key insights into the ecosystem’s progress in 2024 and the
+                        opportunities shaping its future. To know more, <a
+                            style="color: #6aff9c; text-decoration: none;" href="">click
+                            here</a>
+                    </p>
+
+                    <p style="color: #fff;">Shalini Gupta, our Chief Policy & Advocacy Officer, joined an engaging panel
+                        discussion on
+                        'Technology and DPI – Transforming MSME Financing' at the Conference on MSME Financing and the
+                        1st MSME Banking & NBFC Excellence Sammaan – 2025. To know more, <a
+                            style="color: #6aff9c; text-decoration: none;" href="">click here</a></p>
+
+                    <p style="color: #fff;">Upcoming- Exclusive AA Roadshow Arrives in Pune! 🚀.After engaging sessions
+                        in Chennai, Delhi,
+                        and Bengaluru, we’re pleased to continue the AA momentum in Pune going to be held on 13th
+                        February 2025 (Thursday) . For more information reach out to us at info@sahamati.org.in</p>
+                </div>
+                <div style="padding-top: 1rem;">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/Technical-Updates.png" alt="">
+
+                    <p style="color: white;">In the December Release, the Product and Engineering Team adopted Sunbird
+                        Obsrv as the
+                        observability platform. The MIS that goes out to all the ecosystem stakeholders was redone using
+                        Superset, and critical data was anonymised. Internal milestones, such as migrating to Nginx and
+                        Kong, including the ModSecurity plugin for whitelisting, were completed (our commitment to using
+                        open source).
+                    </p>
+
+                    <p style="color: white;">The Engineering team made significant progress in reducing the latency at
+                        the Router by
+                        optimising the code and measuring it in end-to-end scenarios such as Account Discovery, Account
+                        Linking, Consent, and Data fetch. </p>
+
+                    <p style="color: white;">The team also tightened security with the Central Registry. </p>
+
+                    <p style="color: white;">The team also tightened security with the Central Registry. </p>
+                    <p style="color: white;">All these changes to the UAT environment will be deployed in production in
+                        mid-January.</p>
+                </div>
+
+                <div style="padding-top: 1rem; padding-bottom: 1rem;">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/Operations-Updates.png"
+                        alt="Operations Updates">
+
+                    <p style="color: white;">In the December Release, the Product and Engineering Team adopted Sunbird
+                        Obsrv as the observability platform. The MIS that goes out to all the ecosystem stakeholders was
+                        redone using Superset, and critical data was anonymised. Internal milestones, such as migrating
+                        to Nginx and Kong, including the ModSecurity plugin for whitelisting, were completed (our
+                        commitment to using open source).
+                    </p>
+
+                    <p style="color: white;">The Engineering team made significant progress in reducing the latency at
+                        the Router by
+                        optimising the code and measuring it in end-to-end scenarios such as Account Discovery, Account
+                        Linking, Consent, and Data fetch. </p>
+
+                    <p style="color: white;">The Engineering team made significant progress in reducing the latency at
+                        the Router by
+                    <p style="color: white;">The team also tightened security with the Central Registry. </p>
+
+                    <p style="color: white;">All these changes to the UAT environment will be deployed in production in
+                        mid-January.</p>
+                </div>
+            </div>
+
+
+            <div class="content-item">
+                <h2><span class="mark">AA Bytes :</span> Common Myth-Busters</h2>
+                <div style="position: relative;">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/Common-Myth-Busters.png" alt="">
+                    <div class="myths">
+                        <div
+                            style="display: flex;align-items: center;justify-content: space-around; gap: 10rem; padding-left: 5rem; padding-right: 3rem; padding-bottom: 1rem; border-bottom: 1px solid #ccc;">
+                            <p style="width: 30%; font-size: 14px; "><b>Myth: AA is still in its nascent stage.</b></p>
+                            <p style="width: 50%; font-size: 14px;">Reality: The AA ecosystem is rapidly growing, with
+                                600+ FIPs and FIUs
+                                onboarded in the
+                                ecosystem</p>
+                        </div>
+                        <div
+                            style="display: flex;align-items: center;justify-content: space-around; gap: 10rem; padding-left: 5rem; padding-right: 3rem; padding-bottom: 1rem; border-bottom: 1px solid #ccc;">
+                            <p style="width: 30%; font-size: 14px;"><b>Myth: Only limited data is available via AA.</b>
+                            </p>
+                            <p style="width: 50%; font-size: 14px;">Reality: AA enables consent-based access to a 16 FI
+                                Types, including
+                                Deposits (Singly held savings a/cs & sole-prop current a/cs), Term Deposits, Recurring
+                                Deposits, Equity Shares (Demat), Exchange Traded Funds, and many more data types. </p>
+                        </div>
+                        <div
+                            style="display: flex;align-items: center;justify-content: space-around; gap: 10rem; padding-left: 5rem; padding-right: 3rem; padding-bottom: 1rem; ">
+                            <p style="width: 30%; font-size: 14px;"><b>Myth: AA is only useful for lending.</b></p>
+                            <p style="width: 50%; font-size: 14px;">Reality: Beyond lending, AA powers wealth
+                                management, Mutual Funds
+                                and Securities, investment advisory, and personalized financial services.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <footer style="padding-top: 2rem;">
+                <div
+                    style="border-bottom: 1px solid #ccc; display: flex; align-items: center;justify-content: space-between; padding-left: 2rem; padding-right: 2rem; padding-bottom: 1.5rem;">
+                    <img src="https://sahamati.org.in/wp-content/uploads/2025/03/logo.png" alt="">
+
+                    <div style="display: flex; align-items: center;justify-content: space-between; gap: 1.5rem;">
+                        <a href=""><img src="https://sahamati.org.in/wp-content/uploads/2025/03/linkedin.png"
+                                alt=""></a>
+                        <a href=""><img src="https://sahamati.org.in/wp-content/uploads/2025/03/x.png" alt=""></a>
+                        <a href=""><img src="https://sahamati.org.in/wp-content/uploads/2025/03/instagram.png"
+                                alt=""></a>
+                        <a href=""><img src="https://sahamati.org.in/wp-content/uploads/2025/03/youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div style="text-align: center; padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                    <p style="font-size: 14px;">Subscribe to our monthly newsletter (Get the Latest updates straight to
+                        your inbox) <a href="#">Click here to
+                            unsubscribe</a></p>
+                    <p style="font-size: 14px;">Connect to an AA today, visit <a
+                            href="https://sahamati.org.in/aa-apps/">https://sahamati.org.in/aa-apps/</a></p>
+                    <p style="font-size: 14px;">Reach out to us @ <a
+                            href="https://sahamati.org.in/contact/">https://sahamati.org.in/contact/</a></p>
+                </div>
+
+            </footer>
         </section>
+
     </main>
 
 </body>

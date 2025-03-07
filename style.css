@@ -16,7 +16,7 @@ main {
 .navbar {
     width: 100%;
     height: 400px;
-    background-image: url(./img/header-bg.png);
+    background-image: url(https://sahamati.org.in/wp-content/uploads/2025/03/header-bg.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -136,7 +136,7 @@ main {
     gap: 2rem;
 }
 .row .col-6 ul li {
-    background: url('./img/list-icon.png') no-repeat left center;
+    background: url('https://sahamati.org.in/wp-content/uploads/2025/03/list-icon.png') no-repeat left center;
     padding-left: 24px;
     background-size: 16px;
     padding-left: 24px;
